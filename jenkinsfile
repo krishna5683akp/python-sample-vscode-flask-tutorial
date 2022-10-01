@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-                git branch: 'master', url: 'https://github.com/krishna5683akp/python-sample-vscode-flask-tutorial.git'
+                git branch: 'NEW_BRANCH_1', url: 'https://github.com/krishna5683akp/python-sample-vscode-flask-tutorial.git'
 
             }
             steps {
