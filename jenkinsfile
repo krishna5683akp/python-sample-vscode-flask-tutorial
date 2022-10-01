@@ -1,7 +1,7 @@
 pipeline {
     agent {label "krishna"}
     stages {
-        stage('vcs') {
+        stage ('vcs') {
             steps {
                 git branch: 'NEW_BRANCH_1', url: 'https://github.com/krishna5683akp/python-sample-vscode-flask-tutorial.git'
 
