@@ -1,5 +1,8 @@
 pipeline {
     agent {label 'krishna'}
+    triggers {
+        pollSCM '* * * * *'
+    }
     stages {
         stage ('vcs') {
             steps {
@@ -14,5 +17,5 @@ pipeline {
             }
         }
     }
-   
+    
 }
