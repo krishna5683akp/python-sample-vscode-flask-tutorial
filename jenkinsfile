@@ -8,8 +8,9 @@ pipeline {
                   python3 -m pip install --upgrade pip
                     pip install -r requirements.txt
                    pip install pytest pytest-azurepipelines
-                    pip install pytest-cov"""
-
+                    pip install pytest-cov
+                    sudo apt install python-pytest -y
+                    pytest test_test1.py"""
             }
         }
     }
