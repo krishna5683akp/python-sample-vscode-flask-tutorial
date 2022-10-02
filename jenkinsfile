@@ -1,8 +1,5 @@
 pipeline {
     agent {label 'krishna'}
-    triggers {
-        pollSCM('* * * * *')
-    }
     stages {
         stage ('vcs') {
             steps {
@@ -16,5 +13,8 @@ pipeline {
                     pytest test_test1.py"""
             }
         }
+    }
+    triggers {
+        pollSCM('* * * * *')
     }
 }
