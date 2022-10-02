@@ -1,7 +1,6 @@
 pipeline {
     agent {label 'krishna'}
     triggers {
-        
          pollSCM('* * * * *')
     }
     stages {
